@@ -46,10 +46,12 @@
 
 /* Chat box */
 #chat-box {
+  width: 100vw;
+  height: 90vh;
   flex: 1;
   min-height: 0;
   padding: 15px;
-  padding-bottom: 75px;
+  padding-bottom: 145px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
