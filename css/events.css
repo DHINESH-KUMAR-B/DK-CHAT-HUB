@@ -1,0 +1,230 @@
+#all {
+  background-color: #000614;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#page-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  background: linear-gradient(90deg, #ff7043, #d81b60, #6a1b9a);
+}
+
+#events-list {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.event-card {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  background-color: #031239;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.event-title {
+  font-size: 18px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.event-date {
+  font-size: 14px;
+  color: #9bacbe;
+}
+.event-desc {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.45;
+}
+.event-created {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #9bacbe;
+  font-size: 12px;
+}
+.event-created img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.event-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.event-actions button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.event-actions button[data-action="delete"] {
+  color: #ff8a80;
+}
+.event-actions button[data-action="share"] {
+  color: #9ecbff;
+}
+.event-actions .liked {
+  color: #ff6b81;
+}
+.like-profiles {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+.like-profiles img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.event-poll {
+  margin-top: 14px;
+  padding: 10px;
+  background: #040f29;
+  border-radius: 10px;
+}
+.poll-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.poll-option span {
+  flex: 1;
+}
+.event-poll small {
+  color: #9bacbe;
+}
+
+/* Floating + button */
+#add-event-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: linear-gradient(90deg, #6a1b9a, #d81b60, #f06292, #ff7043);
+  border: none;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popup */
+#event-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #031239;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.popup-box input,
+.popup-box textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+.popup-box textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+#poll-options {
+  width: 90%;
+  margin: 0 auto;
+}
+.poll-option-input {
+  box-sizing: border-box;
+}
+#add-poll-option {
+  background: #040f29 !important;
+}
+
+.popup-box button {
+  margin: 5px;
+  background: linear-gradient(90deg, #6a1b9a, #d81b60, #f06292, #ff7043);
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Footer nav */
+.footnav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #040f29;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footnav a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footnav a:hover {
+  color: #ff7043;
+}
+
+@media (max-width: 480px) {
+  #events-list {
+    width: calc(100% - 24px);
+    margin: 14px auto 90px;
+  }
+
+  .event-card {
+    padding: 12px;
+  }
+
+  .event-actions {
+    flex-wrap: wrap;
+  }
+
+  .popup-box {
+    width: calc(100% - 30px);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}

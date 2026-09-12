@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile - DK Chat Hub</title>
+  <link rel="icon" href="image/dklogo.png">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body id="all">
+  <main class="profile-page">
+    <header class="profile-header">
+      <a href="home.html" aria-label="Back home"><i class="bi bi-arrow-left"></i></a>
+      <div><h1>Edit Profile</h1><p>Make your profile yours</p></div>
+      <span id="save-status" aria-live="polite"></span>
+    </header>
+
+    <section class="profile-card">
+      <div class="cover-wrap">
+        <img id="cover-preview" src="image/homepagec.png" alt="Cover preview">
+        <label class="cover-button" for="cover-file"><i class="bi bi-camera"></i> Cover</label>
+        <input type="file" id="cover-file" accept="image/*" hidden>
+      </div>
+      <div class="avatar-wrap">
+        <img id="profile-preview" src="image/unknown passport size image.webp" alt="Profile preview">
+        <label class="avatar-button" for="profile-file" aria-label="Change profile photo"><i class="bi bi-camera-fill"></i></label>
+        <input type="file" id="profile-file" accept="image/*" hidden>
+      </div>
+      <div class="profile-identity">
+        <h2 id="profile-display-name">Your profile</h2>
+        <p id="profile-email"></p>
+      </div>
+    </section>
+
+    <form id="profile-form">
+      <section class="form-section">
+        <h2><i class="bi bi-person"></i> Personal details</h2>
+        <label>Display name<input type="text" id="profile-name" maxlength="40" required placeholder="Enter your name"></label>
+        <label>Bio<textarea id="profile-bio" maxlength="160" rows="3" placeholder="Tell your friends about yourself"></textarea><small id="bio-count">0/160</small></label>
+        <div class="two-columns">
+          <label>Location<input type="text" id="profile-location" maxlength="60" placeholder="City or country"></label>
+          <label>Birthday<input type="date" id="profile-birthday"></label>
+        </div>
+        <label>Website<input type="url" id="profile-website" maxlength="120" placeholder="https://example.com"></label>
+      </section>
+      <section class="form-section">
+        <h2><i class="bi bi-sliders"></i> Profile preferences</h2>
+        <label class="toggle-row"><span><strong>Show online status</strong><small>Let friends know when you are online</small></span><input type="checkbox" id="show-online" checked><i class="toggle"></i></label>
+        <label class="toggle-row"><span><strong>Show birthday</strong><small>Display your birthday on your profile</small></span><input type="checkbox" id="show-birthday"><i class="toggle"></i></label>
+        <label class="toggle-row"><span><strong>Allow friend requests</strong><small>Let other users connect with you</small></span><input type="checkbox" id="allow-requests" checked><i class="toggle"></i></label>
+      </section>
+      <p id="profile-error" role="alert"></p>
+      <div class="form-actions"><a href="home.html">Cancel</a><button id="profile-save" type="submit"><i class="bi bi-check2"></i> Save changes</button></div>
+    </form>
+  </main>
+  <nav class="footnav">
+    <a href="home.html"><i class="bi bi-house"></i></a>
+    <a href="chat.html"><i class="bi bi-chat"></i></a>
+    <a href="group.html"><i class="bi bi-people"></i></a>
+    <a href="profile.html" aria-current="page"><i class="bi bi-person-fill"></i></a>
+  </nav>
+  <script type="module" src="js/profile.js"></script>
+</body>
+</html>

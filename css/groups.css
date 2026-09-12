@@ -1,0 +1,192 @@
+#all {
+  background-color: #000614;
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#page-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  background: linear-gradient(90deg, #ff7043, #d81b60, #6a1b9a);
+}
+
+#groups-list {
+  width: 90%;
+  margin: 20px auto 100px;
+}
+#groups-search { width: 90%; margin: 20px auto; display: flex; gap: 10px; align-items: center; padding: 0 15px; box-sizing: border-box; border-radius: 20px; background: #040f29; color: #9bacbe; }
+#group-search-input { flex: 1; padding: 11px 0; border: 0; outline: 0; background: transparent; color: #fff; }
+#recent-groups { width: 90%; margin: 0 auto 15px; }
+#recent-groups h3 { color: #9bacbe; font-size: 14px; }
+#recent-groups button { margin: 3px; padding: 6px 10px; border: 0; border-radius: 14px; background: #031239; color: #fff; cursor: pointer; }
+.group-card {
+  display: flex;
+  align-items: center;
+  background-color: #031239;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.group-open { flex: 1; display: flex; align-items: center; gap: 15px; border: 0; background: transparent; color: #fff; text-align: left; cursor: pointer; }
+.group-info small { color: #9bacbe; }
+.group-actions { display: flex; gap: 8px; }
+.group-actions button { border: 0; background: transparent; color: #fff; cursor: pointer; font-size: 18px; }
+.group-actions button:last-child { color: #ff8a80; }
+
+.footnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 10vh;
+  background-color: #040f29;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footnav a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footnav i {
+  display: block;
+  margin: 20px;
+}
+
+.footnav a:hover {
+  color: #ff7043;
+}
+
+.group-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: double gold 2px;
+  margin-right: 15px;
+}
+
+.group-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#add-group-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: linear-gradient(90deg, #6a1b9a, #d81b60, #ff7043);
+  border: none;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#group-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #031239;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.popup-box h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.popup-box input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+#group-photo-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #040f29;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#group-photo-input::-webkit-file-upload-button {
+  background: linear-gradient(90deg, #6a1b9a, #d81b60, #ff7043);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#group-photo-preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  margin: 10px auto;
+  display: block;
+}
+
+#members-list {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.member-option {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  background-color: #040f29;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.member-option img {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member-option label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.popup-box button {
+  margin: 5px;
+  background: linear-gradient(90deg, #6a1b9a, #d81b60, #ff7043);
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.popup-box button:hover {
+  opacity: 0.9;
+}

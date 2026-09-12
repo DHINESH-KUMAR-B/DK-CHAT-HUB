@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="2;url=login.html">
+  <title>DK chat hub</title>
+  <link rel="icon" href="image/dklogo.png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main class="splash-screen">
+    <div class="ambient-shape shape-one"></div>
+    <div class="ambient-shape shape-two"></div>
+    <div class="ambient-shape shape-three"></div>
+    <div class="spark spark-one"></div>
+    <div class="spark spark-two"></div>
+    <div class="splash-content">
+      <div class="logo-orbit">
+        <span class="orbit-ring"></span>
+        <img src="image/index page logo.png" alt="DK Friends Hub Logo">
+      </div>
+      <p class="eyebrow">WELCOME TO YOUR SOCIAL SPACE</p>
+      <h1>Connect. Share. Belong.</h1>
+      <h5>Preparing your chat hub<span class="loading-dots" aria-hidden="true">...</span></h5>
+      <div class="loading-bar" role="progressbar" aria-label="Loading DK Chat Hub" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress"></div>
+      </div>
+      <p class="loading-caption">Getting everything ready for you</p>
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+  <script>
+    window.setTimeout(function () {
+      window.location.replace("login.html");
+    }, 1600);
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - DK Chat Hub</title>
+  <link rel="icon" href="image/dklogo.png">
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body id="all">
+  <main class="settings-page">
+    <header class="settings-header"><a href="home.html" aria-label="Back home"><i class="bi bi-arrow-left"></i></a><div><h1>Settings</h1><p>Personalize your DK Chat Hub experience</p></div><span id="save-status"></span></header>
+    <form id="settings-form">
+      <section class="settings-section"><h2><i class="bi bi-bell"></i> Notifications</h2>
+        <label class="setting-row"><span><b>Push notifications</b><small>Receive important activity alerts</small></span><input type="checkbox" data-key="pushNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Message notifications</b><small>Alert me about new private messages</small></span><input type="checkbox" data-key="messageNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Group notifications</b><small>Alert me about group activity</small></span><input type="checkbox" data-key="groupNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Event notifications</b><small>Notify me about events and polls</small></span><input type="checkbox" data-key="eventNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Like notifications</b><small>Notify me when content is liked</small></span><input type="checkbox" data-key="likeNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Follow notifications</b><small>Notify me when someone follows me</small></span><input type="checkbox" data-key="followNotifications" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Sound effects</b><small>Play sounds for new activity</small></span><input type="checkbox" data-key="soundEffects" checked><i class="toggle"></i></label>
+      </section>
+      <section class="settings-section"><h2><i class="bi bi-shield-lock"></i> Privacy and safety</h2>
+        <label class="setting-row"><span><b>Show online status</b><small>Let others see when you are online</small></span><input type="checkbox" data-key="showOnline" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Read receipts</b><small>Show when messages have been read</small></span><input type="checkbox" data-key="readReceipts" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Typing indicator</b><small>Show when you are typing</small></span><input type="checkbox" data-key="typingIndicator" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Allow friend requests</b><small>Let other users connect with you</small></span><input type="checkbox" data-key="allowRequests" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Show birthday</b><small>Display your birthday on your profile</small></span><input type="checkbox" data-key="showBirthday"><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Show profile in search</b><small>Allow your profile to appear in Friends</small></span><input type="checkbox" data-key="discoverable" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Allow profile likes</b><small>Let people like your profile</small></span><input type="checkbox" data-key="allowProfileLikes" checked><i class="toggle"></i></label>
+      </section>
+      <section class="settings-section"><h2><i class="bi bi-palette"></i> Appearance and chat</h2>
+        <label class="select-row">Theme<select data-key="theme"><option value="dark">Dark gradient</option><option value="midnight">Midnight blue</option><option value="contrast">High contrast</option></select></label>
+        <label class="select-row">Message font size<select data-key="fontSize"><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select></label>
+        <label class="select-row">Chat density<select data-key="chatDensity"><option value="comfortable">Comfortable</option><option value="compact">Compact</option><option value="spacious">Spacious</option></select></label>
+        <label class="setting-row"><span><b>Animations</b><small>Enable heart and interface animations</small></span><input type="checkbox" data-key="animations" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Auto-scroll messages</b><small>Keep the latest message visible</small></span><input type="checkbox" data-key="autoScroll" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Enter to send</b><small>Press Enter to send a message</small></span><input type="checkbox" data-key="enterToSend" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Save recent chats</b><small>Keep recent conversations on this device</small></span><input type="checkbox" data-key="saveRecentChats" checked><i class="toggle"></i></label>
+      </section>
+      <section class="settings-section"><h2><i class="bi bi-sliders"></i> Content and data</h2>
+        <label class="setting-row"><span><b>Image previews</b><small>Show images directly in conversations</small></span><input type="checkbox" data-key="imagePreviews" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Event sharing</b><small>Allow event links to be shared</small></span><input type="checkbox" data-key="eventSharing" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Activity history</b><small>Show your recent actions on Home</small></span><input type="checkbox" data-key="activityHistory" checked><i class="toggle"></i></label>
+        <label class="setting-row"><span><b>Profile activity status</b><small>Show your recent activity to friends</small></span><input type="checkbox" data-key="activityStatus" checked><i class="toggle"></i></label>
+        <label class="select-row">Language<select data-key="language"><option value="en">English</option><option value="ta">Tamil</option><option value="hi">Hindi</option></select></label>
+        <label class="select-row">Time format<select data-key="timeFormat"><option value="12">12-hour clock</option><option value="24">24-hour clock</option></select></label>
+      </section>
+      <div class="settings-actions"><a href="home.html">Cancel</a><button type="submit"><i class="bi bi-check2"></i> Save settings</button></div>
+    </form>
+  </main>
+  <nav class="footnav"><a href="home.html"><i class="bi bi-house"></i></a><a href="chat.html"><i class="bi bi-chat"></i></a><a href="group.html"><i class="bi bi-people"></i></a><a href="profile.html"><i class="bi bi-person"></i></a></nav>
+  <script type="module" src="js/settings.js"></script>
+</body>
+</html>

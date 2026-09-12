@@ -1,0 +1,198 @@
+#all {
+  background-color: #000614;
+  min-height: 100vh;
+  padding-bottom: 110px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#page-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  background: linear-gradient(90deg, #ff7043, #d81b60, #6a1b9a);
+}
+
+#friends-search {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #040f29;
+  border-radius: 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  color: #9bacbe;
+}
+
+#friend-search-input {
+  flex: 1;
+  padding: 11px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#friend-search-input::placeholder {
+  color: #9bacbe;
+}
+
+#friends-list {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #031239;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.friend-card:hover {
+  box-shadow: 0 0 15px rgba(255, 112, 67, 0.6);
+}
+
+.friend-avatar {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.friend-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: double gold 2px;
+  object-fit: cover;
+}
+
+.profile-status-dot {
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #031239;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.profile-status-dot.online {
+  background-color: #20d879;
+  box-shadow: 0 0 7px rgba(32, 216, 121, .8);
+}
+
+.profile-status-dot.offline {
+  background-color: #ed4b5f;
+  box-shadow: 0 0 7px rgba(237, 75, 95, .55);
+}
+
+.friend-info {
+  flex: 1;
+}
+
+.friend-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.friend-status {
+  font-size: 14px;
+  color: #9bacbe;
+}
+
+.friend-social-counts {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+  color: #9bacbe;
+  font-size: 11px;
+}
+
+.friend-social-counts i { color: #ff7043; }
+
+.friend-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.friend-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #24345f;
+  border-radius: 16px;
+  padding: 7px 8px;
+  background: transparent;
+  color: #c9d2df;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.friend-actions button:hover,
+.friend-actions button.active {
+  border-color: #ff7043;
+  color: #ff9c80;
+}
+
+.friend-actions button:first-child.active { color: #ff5c78; }
+.self-label { color: #9bacbe; font-size: 12px; padding: 8px; }
+.self-card { cursor: default; }
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.online { background-color: #00ff00; }
+.offline { background-color: #ff0000; }
+
+.footnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  min-height: 68px;
+  background-color: #040f29;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.footnav a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footnav a:hover {
+  color: #ff7043;
+}
+
+@media (max-width: 600px) {
+  .friend-actions button span { display: none; }
+  .friend-actions button { padding: 8px; }
+  #all { padding-bottom: 120px; }
+  .footnav { height: 76px; min-height: 76px; }
+}

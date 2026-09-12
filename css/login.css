@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+
+body {
+    background-color: #010413;
+    font-family: Arial, sans-serif;
+}
+
+img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 75%;
+  max-height: 75%;
+}
+
+@media(min-width:321px) and (max-width:375px) {
+    img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
+@media(min-width:376px) and (max-width:426px) {
+    img {
+        top: 19%;
+        max-width: 65%;
+        max-height: 65%;
+    }
+}
+
+h2 {
+  color: white;
+}
+
+.text {
+  color: #707fa3;
+  font-weight: 900;
+}
+
+#welcome {
+    position: absolute;
+    top: 36.5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#username, #password {
+    background-color: #030f2a;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block; 
+    padding: 4% 0%;
+    border-radius: 15px;
+    padding-left: 15%;
+    text-align: center;
+    width: 75%;
+    height: 5%;
+    color: #516691;
+    border: solid #0e244a 3px;
+    cursor: pointer;
+}
+
+#username {
+    top: 50%;
+}
+
+#password {
+    top: 63%;
+}
+
+#username::placeholder, #password::placeholder {
+    color: #516691;
+    padding-right: 150px;
+}
+
+#lock {
+   position: absolute;
+   top: 63%;
+   left: 17%;
+   font-size: 25px;
+   transform: translate(-50%, -50%); 
+   color: #d1b0e2;
+   z-index: 1;
+}
+
+#person {
+    position: absolute;
+    top: 50%;
+    left: 17%; 
+    font-size: 25px;
+    transform: translate(-50%, -50%); 
+    color: #d1b0e2;
+    z-index: 1;
+}
+
+#login {
+    position: absolute;
+    top: 80%;
+    left: 50%; 
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #6a1b9a, #d81b60, #f06292, #ff7043);
+    border-radius: 40px;
+    color: white;
+    width: 93%;
+    padding: 4% 0%;
+    height: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+#link {
+    text-decoration: none;
+    color: #8821c5;
+    cursor: pointer;
+}
+
+#signup {
+    position: absolute;
+    top: 90%;
+    left: 46%;
+    transform: translate(-45%, -55%);
+    color: #516691;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#toggleEye {
+    color: #d1b0e2;
+    position: absolute;
+    top: 63%;
+    left: 85%; 
+    font-size: 25px;
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+    z-index: 1;
+}
