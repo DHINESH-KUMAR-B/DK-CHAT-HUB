@@ -152,9 +152,17 @@
   color: #ff9c80;
 }
 
-.friend-actions button:first-child.active { color: #ff5c78; }
-.self-label { color: #9bacbe; font-size: 12px; padding: 8px; }
-.self-card { cursor: default; }
+.friend-actions button:first-child.active { 
+  color: #ff5c78; 
+}
+.self-label { 
+  color: #9bacbe; 
+  font-size: 12px; 
+  padding: 8px; 
+}
+.self-card { 
+  cursor: default; 
+}
 
 .status-dot {
   width: 10px;
@@ -163,8 +171,12 @@
   margin-left: 8px;
 }
 
-.online { background-color: #00ff00; }
-.offline { background-color: #ff0000; }
+.online { 
+  background-color: #00ff00; 
+}
+.offline { 
+  background-color: #ff0000; 
+}
 
 .footnav {
   position: fixed;
@@ -191,8 +203,17 @@
 }
 
 @media (max-width: 600px) {
-  .friend-actions button span { display: none; }
-  .friend-actions button { padding: 8px; }
-  #all { padding-bottom: 120px; }
-  .footnav { height: 76px; min-height: 76px; }
+  .friend-actions button span { 
+    display: none; 
+  }
+  .friend-actions button { 
+    padding: 8px; 
+  }
+  #all { 
+    padding-bottom: 120px; 
+  }
+  .footnav { 
+    height: 76px; 
+    min-height: 76px; 
+  }
 }

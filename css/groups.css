@@ -16,11 +16,43 @@
   width: 90%;
   margin: 20px auto 100px;
 }
-#groups-search { width: 90%; margin: 20px auto; display: flex; gap: 10px; align-items: center; padding: 0 15px; box-sizing: border-box; border-radius: 20px; background: #040f29; color: #9bacbe; }
-#group-search-input { flex: 1; padding: 11px 0; border: 0; outline: 0; background: transparent; color: #fff; }
-#recent-groups { width: 90%; margin: 0 auto 15px; }
-#recent-groups h3 { color: #9bacbe; font-size: 14px; }
-#recent-groups button { margin: 3px; padding: 6px 10px; border: 0; border-radius: 14px; background: #031239; color: #fff; cursor: pointer; }
+#groups-search { 
+  width: 90%; 
+  margin: 20px auto; 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+  padding: 0 15px; 
+  box-sizing: border-box; 
+  border-radius: 20px; 
+  background: #040f29; 
+  color: #9bacbe; 
+}
+#group-search-input { 
+  flex: 1; 
+  padding: 11px 0; 
+  border: 0; 
+  outline: 0; 
+  background: transparent; 
+  color: #fff; 
+}
+#recent-groups { 
+  width: 90%; 
+  margin: 0 auto 15px; 
+}
+#recent-groups h3 { 
+  color: #9bacbe; 
+  font-size: 14px; 
+}
+#recent-groups button { 
+  margin: 3px; 
+  padding: 6px 10px; 
+  border: 0; 
+  border-radius: 14px; 
+  background: #031239; 
+  color: #fff; 
+  cursor: pointer; 
+}
 .group-card {
   display: flex;
   align-items: center;
@@ -30,11 +62,34 @@
   margin-bottom: 15px;
   cursor: pointer;
 }
-.group-open { flex: 1; display: flex; align-items: center; gap: 15px; border: 0; background: transparent; color: #fff; text-align: left; cursor: pointer; }
-.group-info small { color: #9bacbe; }
-.group-actions { display: flex; gap: 8px; }
-.group-actions button { border: 0; background: transparent; color: #fff; cursor: pointer; font-size: 18px; }
-.group-actions button:last-child { color: #ff8a80; }
+.group-open { 
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  border: 0; 
+  background: transparent; 
+  color: #fff; 
+  text-align: left; 
+  cursor: pointer; 
+}
+.group-info small { 
+  color: #9bacbe;
+ }
+.group-actions { 
+  display: flex;
+  gap: 8px;
+}
+.group-actions button { 
+  border: 0; 
+  background: transparent; 
+  color: #fff; 
+  cursor: pointer; 
+  font-size: 18px; 
+}
+.group-actions button:last-child { 
+  color: #ff8a80;
+}
 
 .footnav {
   position: fixed;

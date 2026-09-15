@@ -37,7 +37,6 @@
   font-weight: bold;
   margin-top: 8px;
   background: linear-gradient(90deg, #ff7043, #d81b60, #6a1b9a);
-  -webkit-text-fill-color: transparent;
 }
 
 /* Bell + Profile */
@@ -278,8 +277,7 @@
   cursor: pointer;
 }
 
-.profile-menu-actions a:hover,
-.profile-menu-actions button:hover {
+.profile-menu-actions a:hover,.profile-menu-actions button:hover {
   border-color: #ff7043;
   color: #ff9c80;
 }
@@ -335,10 +333,18 @@
   vertical-align: middle;
 }
 
-#chat { background-color: #070a47; }
-#friends { background-color: #031239; }
-#group { background-color: #080c3c; }
-#event { background-color: #31163a; }
+#chat { 
+  background-color: #070a47; 
+}
+#friends { 
+  background-color: #031239; 
+}
+#group { 
+  background-color: #080c3c; 
+}
+#event { 
+  background-color: #31163a; 
+}
 
 .card:hover {
   transform: scale(1.05);
